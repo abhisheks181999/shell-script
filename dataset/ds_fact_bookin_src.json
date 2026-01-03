@@ -1,0 +1,22 @@
+{
+	"name": "ds_fact_bookin_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ld_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "data_11c79dff-143b-4c9c-b5b1-35b54c3b3965_b474e96a-17a2-46e4-95b1-99bde67b129d.parquet",
+				"folderPath": "sql",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

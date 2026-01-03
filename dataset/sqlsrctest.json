@@ -1,0 +1,22 @@
+{
+	"name": "sqlsrctest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ld_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "data_e147c888-4d79-4717-8183-156e2f4212ec_a33f4d09-4c0e-441d-8f3b-7880feaf3948.parquet",
+				"folderPath": "sql",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
